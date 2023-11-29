@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styler.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://unpkg.com/mathjs@12.1.0/lib/browser/math.js"></script>
+  <title> Mahdi Hashemi | Frontend Mentor | Calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="general-dev">
+    <div class="header">
+      <div class="logo">
+        <p>calc</p>
+      </div>
+      <div class="top-right">
+        <div class="theme">
+          <p>THEME</p>
+        </div>
+        <div class="theme-container">
+          <div class="theme-num">
+            <button class="theme-1">1</button>
+            <button class="theme-2">2</button>
+            <button class="theme-3">3</button>
+          </div>
+          <div class="scroll">
+            <div id="cursor" class="cursor"></div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--the section above is related to the header of the calculator-->
+    <div class="input-field">
+      <input class="input-result" type="text" placeholder="000" id="inputField" oninput="formatInput(this)">
+    </div>
+    <!--this section above is realted to the input field-->
+    <div class="btn-container">
+      <div class="num-btns">
+        <button class="num-but" data-num="7">7</button>
+        <button class="num-but" data-num="8">8</button>
+        <button class="num-but" data-num="9">9</button>
+        <button class="del-btn">del</button>
+        <button class="num-but" data-num="4">4</button>
+        <button class="num-but" data-num="5">5</button>
+        <button class="num-but" data-num="6">6</button>
+        <button class="num-but" data-num="+">+</button>
+        <button class="num-but" data-num="1">1</button>
+        <button class="num-but" data-num="2">2</button>
+        <button class="num-but" data-num="3">3</button>
+        <button class="num-but" data-num="-">-</button>
+        <button class="num-but" data-num=".">.</button>
+        <button class="num-but" data-num="0">0</button>
+        <button class="num-but" data-num="/">/</button>
+        <button class="num-but" data-num="*">x</button>
+      </div>
+      <div class="equal-res-btns">
+        <div>
+          <button class="res-btn">RESET</button>
+        </div>
+        <div >
+          <button class="eq-btn" onclick="run()">=</button>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="theme.js">
+
+  </script>
+
+  <script src="cal.js">
+    
+  </script>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://m1389.github.io/Mahdi-Hashemi/#">Mahdi Hashemi</a>.
+  </div>
+</body>
+</html>
